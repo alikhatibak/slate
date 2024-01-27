@@ -12,6 +12,8 @@ Seamlessly handle shots without synchronized sound using our MOS feature. Mainta
 Capture rich metadata to document crucial details about each shot. From scene information to camera settings, ensure that every nuance is cataloged for future reference.
 - 👥 Presets for Efficiency:
 Streamline your workflow with customizable presets. Save your preferred settings for different scenarios, saving you time and ensuring consistency across your production.
+- ⚙️ Templates:
+Allow user-defined slate templates. Select default Director, DP, and other Fields for easy slate configuration.
 - 🗂️ Comprehensive Organization:
 Keep your project organized effortlessly. Slate offers a user-friendly interface that allows you to categorize shots, scenes, and other production elements with ease.
 - 🎬 User-Friendly Interface:
