@@ -45,7 +45,7 @@ Thank you for considering contributing to the Slate project! Your involvement he
 
 ## Code of Conduct
 
-Please adhere to the [Code of Conduct](Docs/CODE_OF_CONDUCT.md) to ensure a positive and inclusive environment for everyone.
+Please adhere to the [Code of Conduct]([Docs/CODE_OF_CONDUCT.md](https://github.com/alikhatibak/Slate/blob/main/Docs/CODE_OF_CONDUCT.md)) to ensure a positive and inclusive environment for everyone.
 
 ## License
 
