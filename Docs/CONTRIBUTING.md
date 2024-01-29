@@ -45,10 +45,10 @@ Thank you for considering contributing to the Slate project! Your involvement he
 
 ## Code of Conduct
 
-Please adhere to the [Code of Conduct](Docs/CODE_OF_CONDUCT.md) to ensure a positive and inclusive environment for everyone.
+Please adhere to the [Code of Conduct](https://github.com/alikhatibak/Slate/blob/main/Docs/CODE_OF_CONDUCT.md) to ensure a positive and inclusive environment for everyone.
 
 ## License
 
-By contributing to Slate, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing to Slate, you agree that your contributions will be licensed under the [MIT License](https://opensource.org/license/mit/).
 
 Thank you for your contribution! 🚀
