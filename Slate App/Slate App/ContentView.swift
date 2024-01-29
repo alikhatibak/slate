@@ -10,16 +10,16 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query private var items: [Slate]
 
     var body: some View {
         NavigationSplitView {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Slate created at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard)), Take: \(item.take), Scene: \(item.scene), Roll: \(item.roll), Director: \(item.director), DOP: \(item.dop), Slate: \(item.slate_identifier)")
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        Text("\(item.production_title) Slate")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -35,18 +35,23 @@ struct ContentView: View {
 #endif
                 ToolbarItem {
                     Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                        Label("Create a Slate", systemImage: "plus")
+                    }
+                }
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Create a Project", systemImage: "minus")
                     }
                 }
             }
         } detail: {
-            Text("Select an item")
+            Text("Create or Select a Slate")
         }
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
+            let newItem = Slate(timestamp: Date())
             modelContext.insert(newItem)
         }
     }
@@ -62,5 +67,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Slate.self, inMemory: true)
 }

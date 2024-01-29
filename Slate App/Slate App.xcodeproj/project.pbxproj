@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990209C32B68534C0020F2F4 /* Slate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990209C22B68534C0020F2F4 /* Slate.swift */; };
 		9909E1942B66E7B900152369 /* Slate_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1932B66E7B900152369 /* Slate_AppApp.swift */; };
 		9909E1962B66E7B900152369 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1952B66E7B900152369 /* ContentView.swift */; };
-		9909E1982B66E7B900152369 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1972B66E7B900152369 /* Item.swift */; };
 		9909E19A2B66E7BA00152369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9909E1992B66E7BA00152369 /* Assets.xcassets */; };
 		9909E19E2B66E7BA00152369 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9909E19D2B66E7BA00152369 /* Preview Assets.xcassets */; };
 		9909E1A82B66E7BA00152369 /* Slate_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1A72B66E7BA00152369 /* Slate_AppTests.swift */; };
@@ -35,10 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		990209C22B68534C0020F2F4 /* Slate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slate.swift; sourceTree = "<group>"; };
 		9909E1902B66E7B900152369 /* Slate App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slate App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9909E1932B66E7B900152369 /* Slate_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slate_AppApp.swift; sourceTree = "<group>"; };
 		9909E1952B66E7B900152369 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9909E1972B66E7B900152369 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9909E1992B66E7BA00152369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9909E19B2B66E7BA00152369 /* Slate_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Slate_App.entitlements; sourceTree = "<group>"; };
 		9909E19D2B66E7BA00152369 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -99,10 +99,10 @@
 			children = (
 				9909E1932B66E7B900152369 /* Slate_AppApp.swift */,
 				9909E1952B66E7B900152369 /* ContentView.swift */,
-				9909E1972B66E7B900152369 /* Item.swift */,
 				9909E1992B66E7BA00152369 /* Assets.xcassets */,
 				9909E19B2B66E7BA00152369 /* Slate_App.entitlements */,
 				9909E19C2B66E7BA00152369 /* Preview Content */,
+				990209C22B68534C0020F2F4 /* Slate.swift */,
 			);
 			path = "Slate App";
 			sourceTree = "<group>";
@@ -263,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9909E1962B66E7B900152369 /* ContentView.swift in Sources */,
-				9909E1982B66E7B900152369 /* Item.swift in Sources */,
 				9909E1942B66E7B900152369 /* Slate_AppApp.swift in Sources */,
+				990209C32B68534C0020F2F4 /* Slate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
