@@ -15,6 +15,8 @@
 		9909E1A82B66E7BA00152369 /* Slate_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1A72B66E7BA00152369 /* Slate_AppTests.swift */; };
 		9909E1B22B66E7BA00152369 /* Slate_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1B12B66E7BA00152369 /* Slate_AppUITests.swift */; };
 		9909E1B42B66E7BA00152369 /* Slate_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9909E1B32B66E7BA00152369 /* Slate_AppUITestsLaunchTests.swift */; };
+		99FED8E32B68C9CB005F0619 /* CreateSlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FED8E22B68C9CB005F0619 /* CreateSlateView.swift */; };
+		99FED8E52B68CABF005F0619 /* CreateSlateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FED8E42B68CABF005F0619 /* CreateSlateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9909E1AD2B66E7BA00152369 /* Slate AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slate AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9909E1B12B66E7BA00152369 /* Slate_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slate_AppUITests.swift; sourceTree = "<group>"; };
 		9909E1B32B66E7BA00152369 /* Slate_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slate_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99FED8E22B68C9CB005F0619 /* CreateSlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSlateView.swift; sourceTree = "<group>"; };
+		99FED8E42B68CABF005F0619 /* CreateSlateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSlateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				9909E19B2B66E7BA00152369 /* Slate_App.entitlements */,
 				9909E19C2B66E7BA00152369 /* Preview Content */,
 				990209C22B68534C0020F2F4 /* Slate.swift */,
+				99FED8E22B68C9CB005F0619 /* CreateSlateView.swift */,
+				99FED8E42B68CABF005F0619 /* CreateSlateViewModel.swift */,
 			);
 			path = "Slate App";
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FED8E32B68C9CB005F0619 /* CreateSlateView.swift in Sources */,
 				9909E1962B66E7B900152369 /* ContentView.swift in Sources */,
+				99FED8E52B68CABF005F0619 /* CreateSlateViewModel.swift in Sources */,
 				9909E1942B66E7B900152369 /* Slate_AppApp.swift in Sources */,
 				990209C32B68534C0020F2F4 /* Slate.swift in Sources */,
 			);

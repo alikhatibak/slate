@@ -11,7 +11,7 @@ import SwiftData
 @Model
 final class Slate {
     var timestamp: Date
-    var production_title: String = "Production Title"
+    var production_title: String = ""
     var take: Int = 1
     var scene: Int = 1
     var roll: Int = 1
