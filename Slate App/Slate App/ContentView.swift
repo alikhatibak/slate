@@ -17,9 +17,9 @@ struct ContentView: View {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Slate created at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard)), Take: \(item.take), Scene: \(item.scene), Roll: \(item.roll), Director: \(item.director), DOP: \(item.dop), Slate: \(item.slate_identifier)")
+                        Text("Slate created at \(item.createdTimestamp, format: Date.FormatStyle(date: .numeric, time: .standard)), Take: \(item.take), Scene: \(item.scene), Roll: \(item.roll), Director: \(item.director), DOP: \(item.dp), Slate: \(item.slateIdentifier)")
                     } label: {
-                        Text("\(item.production_title) Slate")
+                        Text("\(item.productionTitle) Slate")
                     }
                 }
                 .onDelete(perform: deleteItems)
