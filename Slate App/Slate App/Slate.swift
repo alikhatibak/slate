@@ -10,13 +10,9 @@ import SwiftData
 
 @Model
 final class Slate {
-    enum NumberingConventions {
-        case US, UK, EU
-    }
-    var convention = NumberingConventions.US
     
+    var convention: String = "US"
     var autoSlate: Bool = false
-    
     var createdTimestamp: Date
     var productionTitle: String = ""
     var take: Int = 1
@@ -28,23 +24,16 @@ final class Slate {
     var cameraIdentifier: String = "A"
     var director: String = ""
     var dp: String = ""
-    
     var exterior: Bool = true
     var interior: Bool = false
     var day: Bool = true
     var night: Bool = false
     var sync: Bool = true
     var mos: Bool = false
-    
     var notes: String = "" // prob not how i want to handle this, placeholder
-    
     
     init(timestamp: Date) {
         self.createdTimestamp = timestamp // sets created_timestamp to current time upon initialization
-    }
-    
-    init(convention: NumberingConventions) {
-        self.convention = convention
     }
     
     
@@ -54,13 +43,13 @@ final class Slate {
 //      Convention Setters
     
     func setConventionUS () {
-        self.convention = NumberingConventions.US // Sets numbering convention to US style (Scene = Int, Shot = Char, no seperator)
+        self.convention = "US" // Sets numbering convention to US style (Scene = Int, Shot = Char, no seperator)
     }
     func setConventionUK () {
-        self.convention = NumberingConventions.UK // Sets numbering convention to UK style (Scene = Int, Shot = NA, slate_identifier used instead, continuos update on every take increment
+        self.convention = "UK" // Sets numbering convention to UK style (Scene = Int, Shot = NA, slate_identifier used instead, continuos update on every take increment
     }
     func setConventionEU () {
-        self.convention = NumberingConventions.EU // Sets numbering convention to EU style (Scene = Int, Shot = Int, "/" seperator)
+        self.convention = "EU" // Sets numbering convention to EU style (Scene = Int, Shot = Int, "/" seperator)
     }
 
 //      Var Setters
@@ -68,11 +57,11 @@ final class Slate {
     func setProductionTitle (title: String) {
         self.productionTitle = title
     }
-    func setDirector (director: String) {
-        self.director = director
+    func setDirector (directorname: String) {
+        self.director = directorname
     }
-    func setDp (dp: String) {
-        self.dp = dp
+    func setDp (dpname: String) {
+        self.dp = dpname
     }
     func setExterior () {
         self.exterior = true
@@ -101,6 +90,30 @@ final class Slate {
     
 //    State Setters - #todo Take, Scene, Shot, Roll, FPS, Slate Identifier, ?Camera Identifier?
     
+    func setTake (takenumber: Int) {
+        self.take = takenumber
+    }
+    func setShot (shotnumber: Int) {
+        self.shot = shotnumber
+        self.take = 1
+    }
+    func setScene (scenenumber: Int) {
+        self.scene = scenenumber
+        self.shot = 1
+        self.take = 1
+    }
+    func setRoll (rollnumber: String) {
+        self.roll = rollnumber
+    }
+    func setFps (framerate: Double) {
+        self.fps = framerate // Want to implement a couple of default framerates to choose, as well as a custom field. Current code suffices for custom framerate
+    }
+    func setSlateIdentifier (slateNumber: Int) {
+        self.slateIdentifier = slateNumber
+    }
+    func setCameraIdentifier (cameraIdentifier: String) {
+        self.cameraIdentifier = cameraIdentifier
+    }
     
 // Increment Methods
     

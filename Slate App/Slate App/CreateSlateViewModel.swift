@@ -5,10 +5,10 @@
 //  Created by Ali Khatib on 1/30/24.
 //
 
-import Foundation
-
-@Observable
-class CreateSlateViewModel {
-    
-    
-}
+//import Foundation
+//
+//@Observable
+//class CreateSlateViewModel {
+//    
+//    
+//}
