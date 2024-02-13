@@ -1,22 +1,22 @@
 //
-//  Slate.swift
+//  Scene.swift
 //  Slate App
 //
-//  Created by Ali Khatib on 1/28/24.
+//  Created by Ali Khatib on 2/12/24.
 //
 
 import Foundation
 import SwiftData
 
 @Model
-final class Slate {
+final class Scene {
     
     var convention: String = "US"
     var autoSlate: Bool = false
     var createdTimestamp: Date
     var productionTitle: String = ""
     var take: Int = 1
-    var scene: Scene
+    var scene: Int = 1
     var shot: Int = 0 // US numbering uses letters, European numbering uses integers (US: 14C {Scene 14, Shot 3}, Europe: 14/3 {Scene 14 Shot 3})
     var roll: String = "A001"
     var slateIdentifier: Int = 1 // for UK numbering only, may still include visually for note taking, script supervisors sometimes find having a running count of all slates
