@@ -1,0 +1,11 @@
+[!]  --- xcodebuild: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:E58DC1C5-6B55-4926-B57A-1534EEF25464, OS:17.4, name:iPad Pro (12.9-inch) (6th generation) }
+{ platform:iOS Simulator, id:E58DC1C5-6B55-4926-B57A-1534EEF25464, OS:17.4, name:iPad Pro (12.9-inch) (6th generation) }
+Build Succeeded
+
+-----------------------------
+-- xcodebuild.nvim summary --
+-----------------------------
+
+  ✔ Build Succeeded
+
